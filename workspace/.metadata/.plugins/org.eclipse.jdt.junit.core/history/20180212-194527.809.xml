@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="junitRunner" project="FreeCRMBDDFramework" tests="8" started="8" failures="0" errors="0" ignored="8">
+  <testsuite name="Runner.junitRunner" time="0.203">
+    <testsuite name="Feature: Deal Data creation" time="0.203">
+      <testsuite name="Scenario: Free CRM create a New Deal Scenario" time="0.203">
+        <testcase name="Given User is already on login page" classname="Scenario: Free CRM create a New Deal Scenario" time="0.0" ignored="true"/>
+        <testcase name="When title is Free CRM" classname="Scenario: Free CRM create a New Deal Scenario" time="0.0" ignored="true"/>
+        <testcase name="Then User enters username and password" classname="Scenario: Free CRM create a New Deal Scenario" time="0.0" ignored="true"/>
+        <testcase name="Then User clicks on login button" classname="Scenario: Free CRM create a New Deal Scenario" time="0.0" ignored="true"/>
+        <testcase name="Then User is on home page" classname="Scenario: Free CRM create a New Deal Scenario" time="0.0" ignored="true"/>
+        <testcase name="Then User moves to New Deals page" classname="Scenario: Free CRM create a New Deal Scenario" time="0.011" ignored="true"/>
+        <testcase name="Then User enters deals details" classname="Scenario: Free CRM create a New Deal Scenario" time="0.005" ignored="true"/>
+        <testcase name="Then User closes browser" classname="Scenario: Free CRM create a New Deal Scenario" time="0.187" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

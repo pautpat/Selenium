@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Test Free CRM Suite]">
+  <test name="Free CRM App Test Classes(failed)">
+    <classes>
+      <class name="Runner.testNGRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- Runner.testNGRunner -->
+    </classes>
+  </test> <!-- Free CRM App Test Classes(failed) -->
+</suite> <!-- Failed suite [Test Free CRM Suite] -->

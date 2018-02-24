@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="junitRunner" project="FreeCRMBDDFramework" tests="18" started="18" failures="0" errors="0" ignored="0">
+  <testsuite name="Runner.junitRunner" time="25.79">
+    <testsuite name="Feature: Free CRM Login Page" time="25.79">
+      <testsuite name="Scenario Outline: Free CRM Login Test Page" time="25.79">
+        <testsuite name="Examples:" time="25.79">
+          <testsuite name="| hparvi | bujjikrish786 |" time="4.793">
+            <testcase name="Given User is already on login page" classname="| hparvi | bujjikrish786 |" time="0.006"/>
+            <testcase name="When title is Free CRM" classname="| hparvi | bujjikrish786 |" time="0.786"/>
+            <testcase name="Then User enters &quot;hparvi&quot; and &quot;bujjikrish786&quot;" classname="| hparvi | bujjikrish786 |" time="3.628"/>
+            <testcase name="Then User clicks on login button" classname="| hparvi | bujjikrish786 |" time="0.016"/>
+            <testcase name="Then User is on home page" classname="| hparvi | bujjikrish786 |" time="0.356"/>
+            <testcase name="Then close browser" classname="| hparvi | bujjikrish786 |" time="0.001"/>
+          </testsuite>
+          <testsuite name="| sharvutpat | prachi |" time="6.294">
+            <testcase name="Given User is already on login page" classname="| sharvutpat | prachi |" time="0.032"/>
+            <testcase name="When title is Free CRM" classname="| sharvutpat | prachi |" time="0.321"/>
+            <testcase name="Then User enters &quot;sharvutpat&quot; and &quot;prachi&quot;" classname="| sharvutpat | prachi |" time="5.711"/>
+            <testcase name="Then User clicks on login button" classname="| sharvutpat | prachi |" time="0.009"/>
+            <testcase name="Then User is on home page" classname="| sharvutpat | prachi |" time="0.221"/>
+            <testcase name="Then close browser" classname="| sharvutpat | prachi |" time="0.0"/>
+          </testsuite>
+          <testsuite name="| orrjiejr | rjerj |" time="1.658">
+            <testcase name="Given User is already on login page" classname="| orrjiejr | rjerj |" time="0.017"/>
+            <testcase name="When title is Free CRM" classname="| orrjiejr | rjerj |" time="0.566"/>
+            <testcase name="Then User enters &quot;orrjiejr&quot; and &quot;rjerj&quot;" classname="| orrjiejr | rjerj |" time="0.717"/>
+            <testcase name="Then User clicks on login button" classname="| orrjiejr | rjerj |" time="0.032"/>
+            <testcase name="Then User is on home page" classname="| orrjiejr | rjerj |" time="0.152"/>
+            <testcase name="Then close browser" classname="| orrjiejr | rjerj |" time="0.174"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

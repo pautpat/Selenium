@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="junitRunner" project="FreeCRMBDDFramework" tests="20" started="20" failures="0" errors="0" ignored="0">
+  <testsuite name="Runner.junitRunner" time="31.386">
+    <testsuite name="Feature: Create new contact" time="31.386">
+      <testsuite name="Scenario Outline: Free CRM create new contact test" time="31.386">
+        <testsuite name="Examples:" time="31.386">
+          <testsuite name="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="12.919">
+            <testcase name="Given User is already on login page" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="0.015"/>
+            <testcase name="When title is Free CRM" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="0.959"/>
+            <testcase name="Then User enters &quot;sharvutpat&quot; and &quot;prachi&quot;" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="4.959"/>
+            <testcase name="Then User clicks on login button" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="0.01"/>
+            <testcase name="Then User is on home page" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="5.381"/>
+            <testcase name="When User clicks on Contact tab and select new contact" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="0.043"/>
+            <testcase name="Then Create new contact form opens" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="0.558"/>
+            <testcase name="When User enters &quot;Akshay&quot; and &quot;Kumar&quot; and &quot;Sales Manager&quot;" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="0.125"/>
+            <testcase name="When User clicks on Save button" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="0.866"/>
+            <testcase name="Then Close the browser" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="0.002"/>
+          </testsuite>
+          <testsuite name="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="10.576">
+            <testcase name="Given User is already on login page" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="0.025"/>
+            <testcase name="When title is Free CRM" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="0.773"/>
+            <testcase name="Then User enters &quot;sharvutpat&quot; and &quot;prachi&quot;" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="2.632"/>
+            <testcase name="Then User clicks on login button" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="0.012"/>
+            <testcase name="Then User is on home page" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="5.405"/>
+            <testcase name="When User clicks on Contact tab and select new contact" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="0.041"/>
+            <testcase name="Then Create new contact form opens" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="0.554"/>
+            <testcase name="When User enters &quot;Akshay&quot; and &quot;Khanna&quot; and &quot;Sales Director&quot;" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="0.134"/>
+            <testcase name="When User clicks on Save button" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="0.833"/>
+            <testcase name="Then Close the browser" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="0.167"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="junitRunner" project="FreeCRMBDDFramework" tests="12" started="12" failures="2" errors="0" ignored="1">
+  <testsuite name="Runner.junitRunner" time="22.086">
+    <testsuite name="Feature: Free CRM Login Page" time="22.086">
+      <testsuite name="Scenario Outline: Free CRM Login Test Page" time="22.086">
+        <testsuite name="Examples:" time="22.086">
+          <testsuite name="| haprvi | bujjikrish786 |" time="2.945" incomplete="true">
+            <failure>
+              <expected>CRMPRO</expected>
+              <actual>#1 Free CRM for Any Business: Online Customer Relationship Software</actual>junit.framework.ComparisonFailure: expected:&lt;[CRMPRO]&gt; but was:&lt;[#1 Free CRM for Any Business: Online Customer Relationship Software]&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at StepDefinition.loginStepDefinition.user_is_on_home_page(loginStepDefinition.java:48)&#13;
+	at ✽.Then User is on home page(C:/Users/pautp/workspace/FreeCRMBDDFramework/src/main/java/Features/login.feature:13)&#13;
+&#13;
+</failure>
+            <testcase name="Given User is already on login page" classname="| haprvi | bujjikrish786 |" time="0.0"/>
+            <testcase name="When title is Free CRM" classname="| haprvi | bujjikrish786 |" time="0.297"/>
+            <testcase name="Then User enters &quot;haprvi&quot; and &quot;bujjikrish786&quot;" classname="| haprvi | bujjikrish786 |" time="2.576"/>
+            <testcase name="Then User clicks on login button" classname="| haprvi | bujjikrish786 |" time="0.067"/>
+            <testcase name="Then User is on home page" classname="| haprvi | bujjikrish786 |" time="0.005">
+              <failure>
+                <expected>CRMPRO</expected>
+                <actual>#1 Free CRM for Any Business: Online Customer Relationship Software</actual>junit.framework.ComparisonFailure: expected:&lt;[CRMPRO]&gt; but was:&lt;[#1 Free CRM for Any Business: Online Customer Relationship Software]&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at StepDefinition.loginStepDefinition.user_is_on_home_page(loginStepDefinition.java:48)&#13;
+	at ✽.Then User is on home page(C:/Users/pautp/workspace/FreeCRMBDDFramework/src/main/java/Features/login.feature:13)&#13;
+&#13;
+</failure>
+            </testcase>
+            <testcase name="Then close browser" classname="| haprvi | bujjikrish786 |" time="0.001" ignored="true"/>
+          </testsuite>
+          <testsuite name="| sharvutpat | prachi |" time="8.967">
+            <testcase name="Given User is already on login page" classname="| sharvutpat | prachi |" time="0.009"/>
+            <testcase name="When title is Free CRM" classname="| sharvutpat | prachi |" time="0.595"/>
+            <testcase name="Then User enters &quot;sharvutpat&quot; and &quot;prachi&quot;" classname="| sharvutpat | prachi |" time="7.833"/>
+            <testcase name="Then User clicks on login button" classname="| sharvutpat | prachi |" time="0.01"/>
+            <testcase name="Then User is on home page" classname="| sharvutpat | prachi |" time="0.386"/>
+            <testcase name="Then close browser" classname="| sharvutpat | prachi |" time="0.134"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

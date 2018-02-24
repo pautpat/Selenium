@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="47.260339">
+<testcase classname="Deal Map Data creation" name="Free CRM create a New Deal Scenario" time="47.260339">
+<system-out><![CDATA[Given User is already on login page.........................................passed
+When title is Free CRM......................................................passed
+Then User enters username and password......................................passed
+Then User clicks on login button............................................passed
+Then User is on home page...................................................passed
+Then User moves to New Deals page...........................................passed
+Then User enters deals details..............................................passed
+Then User closes browser....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

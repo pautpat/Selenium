@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="junitRunner" project="FreeCRMBDDFramework" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="Runner.junitRunner" time="5.853">
+    <testsuite name="Feature: Free CRM Login Page" time="5.853">
+      <testsuite name="Scenario: Free CRM Login Test Page" time="5.853">
+        <testcase name="Given User is already on login page" classname="Scenario: Free CRM Login Test Page" time="0.023"/>
+        <testcase name="When title is Free CRM" classname="Scenario: Free CRM Login Test Page" time="0.34"/>
+        <testcase name="Then User enters Username and Password" classname="Scenario: Free CRM Login Test Page" time="5.465"/>
+        <testcase name="Then User clicks on login button" classname="Scenario: Free CRM Login Test Page" time="0.011"/>
+        <testcase name="Then User is on home page" classname="Scenario: Free CRM Login Test Page" time="0.013"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

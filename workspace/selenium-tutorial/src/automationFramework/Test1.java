@@ -1,0 +1,53 @@
+package automationFramework;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Test1 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		/*
+		 * System.setProperty("webdriver.chrome.driver",
+		 * "C:\\Selenium\\chromedriver_win32\\chromedriver.exe"); WebDriver
+		 * driver = new ChromeDriver(); driver.get("http://www.gmail.com");
+		 * Thread.sleep(5000);
+		 * driver.findElement(By.id("identifierId")).sendKeys
+		 * ("pautpat@gmail.com");
+		 * driver.findElement(By.className("RveJvd")).click();
+		 * Thread.sleep(5000);
+		 * driver.findElement(By.name("password")).sendKeys("$Margao2000");
+		 * driver.findElement(By.className("RveJvd")).click();
+		 * Thread.sleep(5000);
+		 * driver.findElement(By.xpath("//*[@role='menuitem']")).click();
+		 * //driver.close();
+		 */
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://newtours.demoaut.com/");
+		Thread.sleep(5000);
+		driver.findElement(By.partialLinkText("REG")).click();
+		Thread.sleep(5000);
+		driver.findElement(By.name("firstName")).sendKeys("Sachin");
+		Thread.sleep(500);
+		driver.findElement(By.name("lastName")).sendKeys("Tendulkar");
+		Thread.sleep(500);
+		driver.findElement(By.name("phone")).sendKeys("4083061192");
+		Thread.sleep(500);
+		driver.findElement(By.id("userName")).sendKeys("Sachin@domain.com");
+		Thread.sleep(500);
+		driver.findElement(By.name("address1")).sendKeys("1 Washington Square");
+		Thread.sleep(500);
+		driver.findElement(By.name("city")).sendKeys("Washington");
+		Thread.sleep(500);
+		driver.findElement(By.name("state")).sendKeys("Wa");
+		Thread.sleep(500);
+		driver.findElement(By.id("email")).sendKeys("Sachin@domain.com");
+		driver.findElement(By.name("password")).sendKeys("xyz");
+		driver.findElement(By.name("confirmPassword")).sendKeys("xyz");
+
+	}
+
+}

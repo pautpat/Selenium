@@ -1,0 +1,79 @@
+package JSExecutor;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class JXLGmail {
+
+	public static void main(String[] args) throws IOException,
+			InterruptedException {
+		// TODO Auto-generated method stub
+		// Open file for reading
+		File f = new File("C:\\Users\\pautp\\Desktop\\readnotepad.txt");
+		FileReader fr = new FileReader(f);
+		BufferedReader br = new BufferedReader(fr);
+
+		// OPen a notepad for writing
+
+		File toWrite = new File("C:\\Users\\pautp\\Desktop\\result.txt");
+		FileWriter fw = new FileWriter(toWrite);
+		BufferedWriter bw = new BufferedWriter(fw);
+
+		String l;
+
+		while ((l = br.readLine()) != null) {
+
+			String[] arr = l.split(",");
+
+			// :Launch Webdriver
+			System.setProperty("webdriver.chrome.driver",
+					"C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
+
+			WebDriver driver = new ChromeDriver();
+
+			driver.manage().window().maximize();
+			Thread.sleep(5000);
+			driver.get("www.gmail.com");
+			Thread.sleep(3000);
+
+			driver.findElement(By.name("identifier")).sendKeys(arr[0],
+					Keys.ENTER);
+			Thread.sleep(3000);
+
+			if (arr[1] == "valid"
+					&& driver.findElement(By.name("password")).isDisplayed()) {
+				bw.write("user id test was passed");
+				bw.newLine();
+
+				// Enter password
+				driver.findElement(By.name("password")).sendKeys(arr[2],
+						Keys.ENTER);
+				Thread.sleep(3000);
+
+			} else if (arr[1] == "invalid"
+					&& driver.findElement(By.xpath("//div[@jsname='B34EJ']"))
+							.isDisplayed()) {
+				bw.write("user id test is passed");
+				bw.newLine();
+			}
+				else
+				{
+					bw.write("Test was failed");
+					bw.newLine();
+				}
+			
+			}
+		}
+
+	}
+
+

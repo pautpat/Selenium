@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="junitRunner" project="FreeCRMBDDFramework" tests="20" started="20" failures="0" errors="0" ignored="20">
+  <testsuite name="Runner.junitRunner" time="0.241">
+    <testsuite name="Feature: Create new contact" time="0.241">
+      <testsuite name="Scenario Outline: Free CRM create new contact test" time="0.241">
+        <testsuite name="Examples:" time="0.241">
+          <testsuite name="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="0.0">
+            <testcase name="Given User is already on login page" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="0.0" ignored="true"/>
+            <testcase name="When title is Free CRM" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="0.0" ignored="true"/>
+            <testcase name="Then User enters &quot;sharvutpat&quot; and &quot;prachi&quot;" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="0.0" ignored="true"/>
+            <testcase name="Then User clicks on login button" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="0.0" ignored="true"/>
+            <testcase name="Then User is on home page" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="0.0" ignored="true"/>
+            <testcase name="When User clicks on Contact tab and select new contact" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="0.0" ignored="true"/>
+            <testcase name="Then Create new contact form opens" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="0.0" ignored="true"/>
+            <testcase name="When User enters &quot;Akshay&quot; and &quot;Kumar&quot; and &quot;Sales Manager&quot;" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="0.0" ignored="true"/>
+            <testcase name="When User clicks on Save button" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="0.0" ignored="true"/>
+            <testcase name="Then Close the browser" classname="| sharvutpat | prachi | Akshay | Kumar | Sales Manager |" time="0.0" ignored="true"/>
+          </testsuite>
+          <testsuite name="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="0.207">
+            <testcase name="Given User is already on login page" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="0.001" ignored="true"/>
+            <testcase name="When title is Free CRM" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="0.005" ignored="true"/>
+            <testcase name="Then User enters &quot;sharvutpat&quot; and &quot;prachi&quot;" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="0.004" ignored="true"/>
+            <testcase name="Then User clicks on login button" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="0.002" ignored="true"/>
+            <testcase name="Then User is on home page" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="0.005" ignored="true"/>
+            <testcase name="When User clicks on Contact tab and select new contact" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="0.002" ignored="true"/>
+            <testcase name="Then Create new contact form opens" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="0.003" ignored="true"/>
+            <testcase name="When User enters &quot;Akshay&quot; and &quot;Khanna&quot; and &quot;Sales Director&quot;" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="0.001" ignored="true"/>
+            <testcase name="When User clicks on Save button" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="0.007" ignored="true"/>
+            <testcase name="Then Close the browser" classname="| sharvutpat | prachi | Akshay | Khanna | Sales Director |" time="0.176" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,17 @@
+package JSExecutor;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class JXLGmail {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File f = new File("C:\\Users\\pautp\\Desktop\\readnotepad.txt");
+		FileReader fr = new FileReader(f);
+		BufferedReader br = new BufferedReader(fr);
+		
+
+	}
+
+}

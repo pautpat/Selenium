@@ -1,0 +1,11 @@
+Feature: Free CRM Login Page
+
+Scenario: Free CRM Login Test Page
+
+Given User is already on login page
+When title is Free CRM
+Then User enters Username and Password
+Then User clicks on login button
+Then User is on home page
+
+

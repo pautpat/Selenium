@@ -1,0 +1,69 @@
+package JSExecutor;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import jxl.Sheet;
+import jxl.Workbook;
+import jxl.read.biff.BiffException;
+import jxl.write.WritableSheet;
+import jxl.write.WritableWorkbook;
+
+public class JXLclass {
+
+	public static void main(String[] args) throws BiffException, IOException, InterruptedException {
+		// TODO Auto-generated method stub
+		// Opening the file and reading the data
+		File f = new File("C:\\Users\\pautp\\Desktop\\Book.xlsx");
+		// Create a Workbook object
+		Workbook wrb = Workbook.getWorkbook(f);
+		// get first sheet
+		Sheet rsh = wrb.getSheet(0);
+		// count the number of rows on that sheet
+		int cour = rsh.getRows();
+		//count the number of columns present in the sheet
+		int couc = rsh.getColumns();
+		
+		
+		//Write result in worksheet
+		WritableWorkbook wwb = Workbook.createWorkbook(f, wrb);
+		WritableSheet wsh = wwb.getSheet(0);
+		
+		
+		//For loop to get data from the excel sheet -- Data Driven
+		for (int i=1; i< cour; i++)
+		{
+			String m=rsh.getCell(0, i).getContents();
+			String mc=rsh.getCell(1, i).getContents();
+			String p = rsh.getCell(2, i).getContents();
+			String pc = rsh.getCell(3, i).getContents();
+			System.setProperty("webdriver.chrome.driver",
+					"C:\\Selenium\\chromedriver_win32\\chromedriver.exe");
+			WebDriver driver = new ChromeDriver();
+			driver.get("http://site21.way2sms.com/content/index.html?");
+			driver.findElement(By.name("username")).sendKeys(m);
+			Thread.sleep(3000);
+			driver.findElement(By.name("password")).sendKeys(p);
+			Thread.sleep(3000);
+			driver.findElement(By.id("loginBTN")).click();
+			Thread.sleep(3000);
+			
+
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

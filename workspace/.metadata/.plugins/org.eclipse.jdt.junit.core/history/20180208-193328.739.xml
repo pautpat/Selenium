@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="junitRunner" project="FreeCRMBDDFramework" tests="18" started="18" failures="2" errors="0" ignored="1">
+  <testsuite name="Runner.junitRunner" time="23.394">
+    <testsuite name="Feature: Free CRM Login Page" time="23.394">
+      <testsuite name="Scenario Outline: Free CRM Login Test Page" time="23.394">
+        <testsuite name="Examples:" time="23.394">
+          <testsuite name="| hparvi | bujjikrish786 |" time="5.406">
+            <testcase name="Given User is already on login page" classname="| hparvi | bujjikrish786 |" time="0.005"/>
+            <testcase name="When title is Free CRM" classname="| hparvi | bujjikrish786 |" time="0.676"/>
+            <testcase name="Then User enters &quot;hparvi&quot; and &quot;bujjikrish786&quot;" classname="| hparvi | bujjikrish786 |" time="4.558"/>
+            <testcase name="Then User clicks on login button" classname="| hparvi | bujjikrish786 |" time="0.021"/>
+            <testcase name="Then User is on home page" classname="| hparvi | bujjikrish786 |" time="0.149"/>
+            <testcase name="Then close browser" classname="| hparvi | bujjikrish786 |" time="0.001"/>
+          </testsuite>
+          <testsuite name="| sharvutpat | prachi |" time="4.813">
+            <testcase name="Given User is already on login page" classname="| sharvutpat | prachi |" time="0.023"/>
+            <testcase name="When title is Free CRM" classname="| sharvutpat | prachi |" time="0.277"/>
+            <testcase name="Then User enters &quot;sharvutpat&quot; and &quot;prachi&quot;" classname="| sharvutpat | prachi |" time="4.358"/>
+            <testcase name="Then User clicks on login button" classname="| sharvutpat | prachi |" time="0.01"/>
+            <testcase name="Then User is on home page" classname="| sharvutpat | prachi |" time="0.144"/>
+            <testcase name="Then close browser" classname="| sharvutpat | prachi |" time="0.001"/>
+          </testsuite>
+          <testsuite name="| orrjiejr | rjerj |" time="1.338" incomplete="true">
+            <failure>
+              <expected>CRMPRO</expected>
+              <actual>#1 Free CRM for Any Business: Online Customer Relationship Software</actual>junit.framework.ComparisonFailure: expected:&lt;[CRMPRO]&gt; but was:&lt;[#1 Free CRM for Any Business: Online Customer Relationship Software]&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at StepDefinition.loginStepDefinition.user_is_on_home_page(loginStepDefinition.java:48)&#13;
+	at ✽.Then User is on home page(C:/Users/pautp/workspace/FreeCRMBDDFramework/src/main/java/Features/login.feature:13)&#13;
+&#13;
+</failure>
+            <testcase name="Given User is already on login page" classname="| orrjiejr | rjerj |" time="0.021"/>
+            <testcase name="When title is Free CRM" classname="| orrjiejr | rjerj |" time="0.358"/>
+            <testcase name="Then User enters &quot;orrjiejr&quot; and &quot;rjerj&quot;" classname="| orrjiejr | rjerj |" time="0.936"/>
+            <testcase name="Then User clicks on login button" classname="| orrjiejr | rjerj |" time="0.014"/>
+            <testcase name="Then User is on home page" classname="| orrjiejr | rjerj |" time="0.009">
+              <failure>
+                <expected>CRMPRO</expected>
+                <actual>#1 Free CRM for Any Business: Online Customer Relationship Software</actual>junit.framework.ComparisonFailure: expected:&lt;[CRMPRO]&gt; but was:&lt;[#1 Free CRM for Any Business: Online Customer Relationship Software]&gt;&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:100)&#13;
+	at junit.framework.Assert.assertEquals(Assert.java:107)&#13;
+	at StepDefinition.loginStepDefinition.user_is_on_home_page(loginStepDefinition.java:48)&#13;
+	at ✽.Then User is on home page(C:/Users/pautp/workspace/FreeCRMBDDFramework/src/main/java/Features/login.feature:13)&#13;
+&#13;
+</failure>
+            </testcase>
+            <testcase name="Then close browser" classname="| orrjiejr | rjerj |" time="0.142" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

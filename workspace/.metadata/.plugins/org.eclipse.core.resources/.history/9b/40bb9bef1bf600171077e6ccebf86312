@@ -1,0 +1,61 @@
+package WindowsAutomation;
+
+import java.awt.AWTException;
+import java.awt.HeadlessException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.StringSelection;
+import java.awt.datatransfer.UnsupportedFlavorException;
+import java.awt.event.KeyEvent;
+import java.io.IOException;
+
+public class Calculator {
+
+	public static void main(String[] args) throws IOException, AWTException,
+			InterruptedException, HeadlessException, UnsupportedFlavorException {
+		
+		Runtime.getRuntime().exec("calc.exe");
+		Robot r = new Robot();
+		StringSelection s = new StringSelection("1234");
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s, null);
+		r.keyPress(KeyEvent.VK_CONTROL);
+		r.keyPress(KeyEvent.VK_V);
+		r.keyRelease(KeyEvent.VK_V);
+		r.keyRelease(KeyEvent.VK_CONTROL);
+		Thread.sleep(5000);
+		r.keyPress(KeyEvent.VK_ADD);
+		r.keyRelease(KeyEvent.VK_ADD);
+		Thread.sleep(5000);
+		StringSelection s2 = new StringSelection("5678");
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s2, null);
+		r.keyPress(KeyEvent.VK_CONTROL);
+		r.keyPress(KeyEvent.VK_V);
+		r.keyRelease(KeyEvent.VK_V);
+		r.keyRelease(KeyEvent.VK_CONTROL);
+		Thread.sleep(5000);
+		r.keyPress(KeyEvent.VK_EQUALS);
+		r.keyRelease(KeyEvent.VK_EQUALS);
+		Thread.sleep(5000);
+		r.keyPress(KeyEvent.VK_CONTEXT_MENU);
+		r.keyRelease(KeyEvent.VK_CONTEXT_MENU);
+		Thread.sleep(5000);
+		r.keyPress(KeyEvent.VK_DOWN);
+		r.keyRelease(KeyEvent.VK_DOWN);
+		r.keyPress(KeyEvent.VK_ENTER);
+		r.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(5000);
+		String con = (String) Toolkit.getDefaultToolkit().getSystemClipboard()
+				.getData(DataFlavor.stringFlavor);
+		System.out.println(con);
+		Thread.sleep(5000);
+
+		// Closing the Calculator window
+		r.keyPress(KeyEvent.VK_ALT);
+		r.keyPress(KeyEvent.VK_F4);
+		r.keyRelease(KeyEvent.VK_F4);
+		r.keyRelease(KeyEvent.VK_ALT);
+
+	}
+
+}

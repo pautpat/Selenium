@@ -1,0 +1,17 @@
+package Runner;
+
+import org.junit.runner.RunWith;
+import cucumber.api.junit.Cucumber;
+import cucumber.api.CucumberOptions;
+
+@RunWith(Cucumber.class)  // this statement is not necessary when we are using TestNg 
+@CucumberOptions(features = "C:\\Users\\pautp\\workspace\\FreeCRMBDDFramework\\src\\main\\java\\Features\\login.feature",
+                  glue={"StepDefinition"},
+            format= {"pretty","html:test-outout"},
+            strict=true,
+            dryRun=false) // to check mapping between feature file and step definition file
+
+public class junitRunner {
+	
+
+}
